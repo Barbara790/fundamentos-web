@@ -1,0 +1,59 @@
+/* Estilos da página index.html */
+
+.left{
+    font-size: 16px;
+    text-align: left;
+}
+
+.center{
+    text-align: center;
+}
+
+.container-sobreMin{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-meusInteresses{
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
+ 
+}
+
+#menu li{
+    display: inline;
+    padding: 15px;
+    font-size: 20px;
+    
+}
+
+
+
+#menu li a{
+    text-decoration: none;
+    color: crimson;
+}
+
+#menu li a:hover{
+    color: darkblue;
+}
+
+.espaco{
+    padding: 30px;
+}
+
+.bordaArredondada{
+    border-radius: 50%;
+}
+
+.tamanhoIcone{
+    width: 30px;
+    height: 30px;
+}
+
+.espacoBottom{
+    margin-bottom: 50px;
+}
