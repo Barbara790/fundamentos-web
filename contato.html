@@ -19,22 +19,25 @@
     </nav>
 
     <section>
-    <h1 class="left espaco">Entre em contato comigo</h1>
+    <h1 class="left espaco">Vamos conversar?</h1>
 
     <div>
     <form class="left espaco">
     
         <label for="nome">Nome:</label> <br>
-        <input type="text" id="nome">
-        <br>
+        <input type="text" id="nome" onkeyup='validaNome()'>
+        <div id="textoNome"></div>
         <br>
         <label for="email">Email:</label> <br>
-        <input type="email" id="email">
+        <input type="email" id="email" onkeyup='validaEmail()'>
+        <div id="textoEmail"></div>
+        <br>
         <label for="assunto">Assunto</label> <br>
-        <textarea name="assunto" id="assunto" cols="30" rows="10"></textarea>
+        <textarea name="assunto" id="assunto" cols="30" rows="10" onkeyup='validaAssunto()'></textarea>
+        <div id="textoAssunto"></div>
+        
         <br>
-        <br>
-        <button>Enviar</button>
+        <button onclick='enviar()'>Enviar</button>
     </form>
     </div>
 
@@ -53,7 +56,7 @@
 
     <div>
 
-        <iframe class="espaco" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.1132081026562!2d-46.55655628602368!3d-23.743342074220564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce41a9e6482511%3A0xd1ea2a49d83ec52f!2sR.%20das%20Laranjeiras%2C%2050%20-%20Parque%20Terra%20Nova%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009820-480!5e0!3m2!1spt-BR!2sbr!4v1623859471491!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <iframe class="espaco" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3652.1132081026562!2d-46.55655628602368!3d-23.743342074220564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce41a9e6482511%3A0xd1ea2a49d83ec52f!2sR.%20das%20Laranjeiras%2C%2050%20-%20Parque%20Terra%20Nova%2C%20S%C3%A3o%20Bernardo%20do%20Campo%20-%20SP%2C%2009820-480!5e0!3m2!1spt-BR!2sbr!4v1623859471491!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
     </div>
 
     </section>
@@ -79,5 +82,7 @@
            &copy Todos os direitos reservados a Barbara dos Santos 
         </p>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
