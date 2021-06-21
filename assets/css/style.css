@@ -16,46 +16,70 @@
     align-items: center;
     
 }
-
-.ft{
-    display: flex;
-    flex-flow: row;
-    justify-content: center;
-    align-items: center;
-    
+.container-sobreMin:hover{
+    background-color: aqua;
 }
 
 .container-meusInteresses{
     display: flex;
-    flex-flow: column;
-    justify-content: left;
-    align-items: flex-start;
- 
+    
 }
 
-.container-sobreMin:hover{
-    background-color: aqua;
+.container-meusInteresses1{
+    flex-direction: column;
+    justify-content: left;
+    
+}
+
+.container-meusInteresses2{
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.container-meusInteresses3{
+    flex-direction: column;
+    justify-content: right;
+    
 }
 
 .container-meusInteresses:hover{
     background-color: aqua;
 }
 
-#menu li{
+
+.estilo-menu{
+    background-color: royalblue;
+    padding: 10px 10px 10px 10px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    
+}
+
+.menu li{
     display: inline;
     padding: 15px;
     font-size: 20px;
     
+    
 }
 
-#menu li a{
+.menu li a{
     text-decoration: none;
     color: crimson;
+    
 }
 
-#menu li a:hover{
+.menu li a:hover{
     color: darkblue;
+    
+    
 }
+
+
 
 .espaco{
     padding: 30px;
@@ -68,10 +92,26 @@
 .tamanhoIcone{
     width: 30px;
     height: 30px;
+    
+}
+
+.espaco-icones{
+    
+
+    margin: 0px;
 }
 
 .espacoBottom{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
+}
+
+
+.ft{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    
 }
 /*.retangulo{
 
